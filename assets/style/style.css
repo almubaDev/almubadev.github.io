@@ -1,35 +1,46 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    margin: 0;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-.logo-container {
-    position: relative;
+body {
+    background-color: #0f0f0f;
+    overflow: hidden;
+    
+}
+
+
+.logo_super {
+    align-items: center;
+    animation: scale-up-vertical-center 0.4s;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    -webkit-animation: scale-up-vertical-center 0.4s;
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 74px;
+    height: 74px;
     border-radius: 50%;
     border: 2px solid #16b8f3;
-    box-shadow: 0 0 10px #16b8f3,
-                0 0 20px #16b8f3,
-                0 0 30px #16b8f3,
-                0 0 40px #16b8f3,
-                0 0 70px #16b8f3;
+    box-shadow: 0 0 10px #16b8f3,                0 0 20px #16b8f3,                0 0 30px #16b8f3,                0 0 40px #16b8f3,                0 0 70px #16b8f3;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: aura-animation 5s linear infinite;
+    -webkit-animation: aura-animation 5s linear infinite;
 }
 
 .logo-text {
-    font-size: 24px;
+    font-size: 10px;
     font-weight: bold;
     color: #16b8f3;
     /* color: #0ff; */
@@ -39,27 +50,112 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.python-logo, .django-logo {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 50%;
-}
-
-.python-logo img, .django-logo img {
+.section {
+    background-color: #0f0f0f;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+.presentation {
+    display: flex;
+    position: relative;
+}
+.iam {
+    margin-top: 84px;
+    width: 70%;
+}
+.name {
+    align-items:flex-end;
+    display: flex;
+    padding-left: 104px;
+}
+.sintx {
+    margin: 12px ;
+}
+.description{
+    align-items:center;
+    display: flex;
+    padding-left: 160px;
+    
+}
+.res_word {
+    color: #57F59C;
+    font-style: italic;
+}
+.contact {
+    background-color: #16b8f3;
     height: 100%;
-    object-fit: contain;
+    width: 30%;
+
+}
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.programming_image {
+    height: 250px;
+    width: 250px;
+}
+.my_link img {
+    height: 50px;
+    margin: 20px;
+    width: 50px;
+    
 }
 
-.python-logo {
-    left: 5px;
+
+.skills {
+    background-color: white;
+} 
+
+/* .language_icon img{
+    height: 70px;
+    width: 70px;
+} */
+
+.language_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
 }
 
-.django-logo {
-    right: 5px;
+.language_icon img {
+    width: 100px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 100px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    margin: 0 10px; /* Espacio entre las imágenes */
+    transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
 }
 
+.language_icon img:hover {
+    transform: translateY(-10px); /* Realiza un pequeño salto hacia arriba al pasar el ratón por encima */
+}
+
+
+
+
+
+.projects{
+    background-color: red;
+}
+
+
+@keyframes scale-up-vertical-center {
+    0%{transform:scaleY(.2)}
+    100%{transform:scaleY(1)}
+}
 @keyframes aura-animation {
     0% {
         transform: translate(-50%, -50%) scale(1);
@@ -74,3 +170,4 @@ body {
         opacity: 1;
     }
 }
+
