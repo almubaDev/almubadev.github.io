@@ -121,8 +121,7 @@ a {
     position: absolute;
 }
 .down_section img {
-    animation: pulse 2s infinite; 
-    
+    animation: pulse 2s infinite;  
     align-self:center;
     height: 40px;
     width: 42px;
@@ -180,7 +179,8 @@ a {
 
    
 }
-.Vlog {
+
+.yout {
     align-items: center;
     color: #0f0f0f;
     display: flex;
@@ -188,17 +188,14 @@ a {
     justify-content: center;
     width: 50%;
 }
-.yout {
-    width: 100%;
-    padding-left: 44px;
-}
 .yout a {
-    display: block;
+    align-self: center;
+    display: inline;
     color: #0f0f0f;
     font-size: 14px;
     font-weight: bold;
     text-align: end;
-    width: 90%;
+   
 
 }
 .yout a:hover {
@@ -207,7 +204,10 @@ a {
 .yout span {
     color: #57F59C;
 }
-
+.you_icon {
+    height: 12px;
+    width: 15px;
+}
 .language_icon {
     display: flex;
     justify-content: center;

@@ -31,63 +31,6 @@ document.addEventListener('wheel', (event) => {
     }
 });
 
-// const icons = document.querySelectorAll('.language_icon img');
 
-// function getRandomPosition(usedPositions) {
-//     const containerWidth = document.querySelector('.language_icon').clientWidth;
-//     const containerHeight = document.querySelector('.language_icon').clientHeight;
-//     const iconWidth = icons[0].clientWidth;
-//     const iconHeight = icons[0].clientHeight;
-
-//     let randomX, randomY;
-//     do {
-//         randomX = Math.floor(Math.random() * (containerWidth - iconWidth));
-//         randomY = Math.floor(Math.random() * (containerHeight - iconHeight));
-//     } while (hasCollision(usedPositions, randomX, randomY, iconWidth, iconHeight));
-
-//     return { x: randomX, y: randomY };
-// }
-
-// function hasCollision(usedPositions, x, y, width, height) {
-//     for (const position of usedPositions) {
-//         if (
-//             x < position.x + position.width &&
-//             x + width > position.x &&
-//             y < position.y + position.height &&
-//             y + height > position.y
-//         ) {
-//             return true; // Hay colisión
-//         }
-//     }
-//     return false; // No hay colisión
-// }
-
-// function moveIcons() {
-//     const usedPositions = [];
-
-//     icons.forEach((icon) => {
-//         const randomPosition = getRandomPosition(usedPositions);
-//         usedPositions.push({
-//             x: randomPosition.x,
-//             y: randomPosition.y,
-//             width: icon.clientWidth,
-//             height: icon.clientHeight,
-//         });
-
-//         icon.style.transition = 'transform 2s ease-in-out'; // Animación de 2 segundos
-//         icon.style.transform = `translate(${randomPosition.x}px, ${randomPosition.y}px)`;
-//     });
-
-//     // Llama a la función nuevamente después de un retraso de 2 segundos
-//     setTimeout(() => {
-//         icons.forEach((icon) => {
-//             icon.style.transition = 'none'; // Elimina la transición para cambiar la posición instantáneamente
-//         });
-//         requestAnimationFrame(moveIcons);
-//     }, 2000);
-// }
-
-// // Iniciar la animación
-// moveIcons();
 
 
