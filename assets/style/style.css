@@ -9,8 +9,9 @@ body {
     overflow: hidden;
     
 }
-
-
+a {
+    text-decoration: none;
+}
 .logo_super {
     align-items: center;
     animation: scale-up-vertical-center 0.4s;
@@ -114,34 +115,136 @@ body {
     width: 50px;
     
 }
+.down_section{
+    bottom: 2px;
+    left: 30%;
+    position: absolute;
+}
+.down_section img {
+    animation: pulse 2s infinite; 
+    
+    align-self:center;
+    height: 40px;
+    width: 42px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1; /* Comienza con opacidad completa (visible) */
+        transform: scale(1); /* Escala normal */
+    }
+    50% {
+        opacity: 0.5; /* Reduce la opacidad a la mitad (semivisible) */
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    }
+    100% {
+        opacity: 1; /* Vuelve a la opacidad completa (visible) */
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}
+
+
+
+
+
 
 
 .skills {
+    align-items: center;
     background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
 } 
 
 /* .language_icon img{
     height: 70px;
     width: 70px;
 } */
+.about_me {
+    color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    padding: 0px 50px;
+    width: 100%;
+}
+.information {
+    padding: 0 20px;
+    width: 50%;
+}
+.information p{
+    font-size: 12px;
+    text-align: justify;
+    
+
+   
+}
+.Vlog {
+    align-items: center;
+    color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.yout {
+    width: 100%;
+    padding-left: 44px;
+}
+.yout a {
+    display: block;
+    color: #0f0f0f;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: end;
+    width: 90%;
+
+}
+.yout a:hover {
+    color:#16b8f3;
+}
+.yout span {
+    color: #57F59C;
+}
 
 .language_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Ajusta la altura según tus necesidades */
+    height: 30%;
+    width: 100%; 
 }
 
 .language_icon img {
-    width: 100px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: 100px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    margin: 0 10px; /* Espacio entre las imágenes */
-    transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
+    width: 50px; 
+    height: 50px; 
+    margin: 0 40px; 
+    transition: transform 0.2s ease-in-out; 
 }
 
 .language_icon img:hover {
-    transform: translateY(-10px); /* Realiza un pequeño salto hacia arriba al pasar el ratón por encima */
+    transform: translateY(-10px);
 }
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.box p {
+    color: #16b8f3;
+   
+}
+
+
+
+
+
+
 
 
 
