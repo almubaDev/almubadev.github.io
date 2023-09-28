@@ -113,9 +113,18 @@ a {
     height: 50px;
     margin: 20px;
     width: 50px;
-    
 }
-.down_section{
+.my_link img:hover {
+    background-color:#57F59C;
+}
+.github_link {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* .down_section{
     bottom: 2px;
     left: 30%;
     position: absolute;
@@ -129,24 +138,18 @@ a {
 
 @keyframes pulse {
     0% {
-        opacity: 1; /* Comienza con opacidad completa (visible) */
-        transform: scale(1); /* Escala normal */
+        opacity: 1; 
+        transform: scale(1); 
     }
     50% {
-        opacity: 0.5; /* Reduce la opacidad a la mitad (semivisible) */
-        transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        opacity: 0.5; 
+        transform: scale(1.1); 
     }
     100% {
-        opacity: 1; /* Vuelve a la opacidad completa (visible) */
-        transform: scale(1); /* Vuelve al tamaño normal */
+        opacity: 1; 
+        transform: scale(1); 
     }
-}
-
-
-
-
-
-
+} */
 
 .skills {
     align-items: center;
@@ -234,26 +237,69 @@ a {
 
 
 }
-
 .box p {
     color: #16b8f3;
    
 }
-
-
-
-
-
-
-
-
-
-
-
 .projects{
-    background-color: red;
+    align-items: center;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:  0 70px;
+  
+
+}
+.projects h2 {
+    margin:  20px 0 40px;
+}
+.project_container {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+.project_card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-bottom: 48px;
+   
+}
+.demo_app {
+    border-radius: 10px;
+    height: 140px;
+    width: 340px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.project_card_links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.project_card_links a {
+    align-items: center;
+    background-color: #16b8f3;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    height: 24px;
+    width: 80px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
 
 @keyframes scale-up-vertical-center {
     0%{transform:scaleY(.2)}
