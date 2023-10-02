@@ -271,6 +271,22 @@ a {
     margin-bottom: 48px;
    
 }
+.example{
+    display: flex;
+
+}
+.lanDev {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 6px;
+    
+}
+.lanDev img{
+    height: 20px;
+    width: 20px;
+}
 .demo_app {
     border-radius: 10px;
     height: 140px;
@@ -282,7 +298,7 @@ a {
 }
 .project_card_links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 .project_card_links a {
@@ -291,16 +307,19 @@ a {
     border-radius: 4px;
     color: white;
     display: flex;
-    justify-content: center;
-    padding: 4px;
     height: 24px;
+    justify-content: center;
+    margin-left: 6px;
+    padding: 4px;
     width: 80px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-
+.button_link{
+    display: flex;
+}
 @keyframes scale-up-vertical-center {
     0%{transform:scaleY(.2)}
     100%{transform:scaleY(1)}
