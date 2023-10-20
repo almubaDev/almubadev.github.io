@@ -32,3 +32,5 @@
 ### My status
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=almubaDev&theme=tokyonight-duo)](https://git.io/streak-stats)
+
+---
