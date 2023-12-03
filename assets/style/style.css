@@ -449,7 +449,9 @@ ul {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-
+.project_card_links a:hover {
+    background-color: #57F59C;
+} 
 .button_link{
     display: flex;
 }
