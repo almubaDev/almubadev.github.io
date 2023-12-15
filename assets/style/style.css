@@ -111,8 +111,8 @@ ul {
 
 .nav_home ul li {
     color: #16b8f3;
-    padding: 0.2rem 1rem;
     margin-left: 5rem;
+    padding: 0.2rem 1rem;
 }
 
 .nav_home ul li a {
@@ -126,17 +126,17 @@ ul {
 }
 
 .nav_button::before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
     background: transparent;
-    top: -7px;
-    left: -7px;
-    z-index: -5;
-    border-top: 3px solid #57F59C;
     border-left: 3px solid #57F59C;
+    border-top: 3px solid #57F59C;
+    content: '';
+    height: 30px;
+    left: -7px;
+    position: absolute;
     transition: 0.5s;
+    top: -7px;
+    width: 30px;
+    z-index: -5;
 }
 
 .nav_button::after {
@@ -337,10 +337,10 @@ ul {
 }
 
 .language_icon img {
-    width: 50px;
     height: 50px;
     margin: 0 40px;
     transition: transform 0.2s ease-in-out;
+    width: 50px;
 }
 
 .language_icon img:hover {
@@ -352,8 +352,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .box p {
@@ -498,7 +496,7 @@ ul {
 @media screen and (width <=920px) {
 
     .logo_super {
-        display: none;
+        display: NONE;
     }
 
     .section {
@@ -526,10 +524,6 @@ ul {
         width: 100%;
     }
 
-    .programming_image {
-        display: none;
-    }
-
     .name {
         display: block;
         padding: 0;
@@ -547,7 +541,8 @@ ul {
     }
 
     .nav_home ul li {
-        background-color: #16b8f3;;
+        background-color: #16b8f3;
+        border-radius: 2rem;
         /* padding: 0.2rem 0.5rem 0.5rem; */
         height: 3rem;
         width: 10rem;
@@ -566,5 +561,96 @@ ul {
     .nav_button::before {
         display: none;
     }
+
+    .nav_button a {
+        padding: 0;
+    }
+
+    .programming_image {
+        display: none;
+    }
+
+    .skills {
+        flex-direction: row-reverse;
+    }
+
+    .about_me {
+        color: black;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 0;
+        width: 80vw;
+    }
+    .information {
+        padding: 0;
+        width: 100%;
+    }
+
+    .information p {
+        padding: 0 3rem;
+        margin:  0.5rem ;
+    } 
+
+   .yout {
+        display: none;
+    } 
+    
+    .language_icon {
+        background-color:black;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 20vw;
+    }
+
+    .language_icon img {
+        height: 30px;
+        margin: 0;
+        width: 30px;
+    }
+    
+    .box {
+        height: 100vh;
+        width: 20vw;
+    }
+
+    .box p{
+        display: none;
+    }
+
+    .nav_aboutme ul {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .nav_aboutme ul li {
+        background-color: #16b8f3;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 7rem;
+        margin-left: 0.2rem;
+        padding: 0.2rem 1rem;
+
+    }
+    .nav_aboutme ul li a {
+        color: black;
+    }
+
+    .nav_project ul li {
+        background-color: #16b8f3;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 7rem;
+        margin-left: 0.2rem;
+        padding: 0.2rem 1rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+} 
+    .nav_project ul li a {
+        color: black;
+    }
+
+
 
 }
