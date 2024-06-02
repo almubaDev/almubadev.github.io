@@ -3,76 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <!-- https://boxicons.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <title>AlmubaDev</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>almubaDev</title>
 </head>
 <body>
-    <div class="section projects">
+    <header>
+        <a href="#" class="logo">almubaDev</a>
+
+        <label for="menu-toggle" class="menu-toggle-acction">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </label>
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+      
+        <ul class="nav_list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="rrss-mobile"><a href="https://www.linkedin.com/in/almubadev" target="_blank"><i class="ri-linkedin-line"></i></a></li>
+            <li class="rrss-mobile"><a href="https://github.com/almubaDev" target="_blank"><i class="ri-github-line"></i></a></li>
+            <li class="rrss-mobile"><a href="#" target="_blank">CV</a></li>
+        </ul>
+    </header>  
+    <section class="proyect-container">
         <h2>Proyectos</h2>
-        <nav class="nav_project">
-            <ul>
-                <li class="nav_button"><a href="../../index.html">¡Hola!</a></li>
-                <li class="nav_button"><a href="./sobreMi.html">Sobre mi</a></li>
-                <!-- <li class="nav_button"><a href="./projects.html">Proyectos</a></li> -->
-            </ul>
-        </nav>
-        <div class="project_container">
-            <div class="project_card">
-                <div class="example">
-                    <div class="lanDev">
-                        <img src="../img/fullColorLogos/html-5.png" alt=""> 
-                        <img src="../img/fullColorLogos/css-3.png" alt=""> 
-                    </div>
-                    <img class="demo_app" src="../img/gifExample/ScreenRecorderProject4.gif" alt="">
-                </div>
-                <div class="project_card_links">
-                    <h6>Landing Page Paddel</h6>
-                    <div class="button_link">
-                        <a href="https://github.com/almubaDev/paddelLanding" target="_blank"><img src="../img/guthubIcon2.svg" alt=""></a>
-                        <a href="https://www.almuba.dev/paddelLanding" target="_blank"><img src="../img/webIcon.svg" alt=""></a>
-                    </div>
+        <div class="project-cards">
+            <!-- cards -->
+            <div class="card">
+                <h4>Landing Page Pádel</h4>
+                <img src="../img/newCap/lppcap.png" alt="Captura referencial de la página">
+                <p>Landing page para un torneo de Pádel ficticio, se utilizaron las tecnologías HTML y CCS.</p>
+                <div>
+                    <a href="https://almuba.dev/paddelLanding/" target="_blank"><i class="ri-window-line"></i></a>
+                    <a href="https://github.com/almubaDev/paddelLanding" target="_blank"><i class="ri-github-fill"></i></a>
                 </div>
             </div>
-            <div class="project_card">
-                <div class="example">
-                    <div class="lanDev">
-                        <img src="../img/fullColorLogos/html-5.png" alt=""> 
-                        <img src="../img/fullColorLogos/css-3.png" alt=""> 
-                        <img src="../img/fullColorLogos/js.png" alt="">
-                        <img src="../img/fullColorLogos/python-logo-512x512.png" alt="">
-                        <img src="../img/fullColorLogos/django-1.png" alt="">
-                        <img src="../img/fullColorLogos/postgre.png" alt="">
-                    </div>
-                    <img class="demo_app" src="../img/gifExample/taskManagerDemo.gif" alt="">
-                </div>               
-                <div class="project_card_links">
-                    <h6>Task Manager CRUD</h6>
-                    <div class="button_link">
-                        <a href="https://github.com/almubaDev/taskManager" target="_blank"><img src="../img/guthubIcon2.svg"alt=""></a>
-                        <a href="https://almubadev.pythonanywhere.com/" target="_blank"><img src="../img/webIcon.svg"alt=""></a>
-                    </div>
+            <div class="card">
+                <h4>Django Preset App</h4>
+                <img src="../img/newCap/presetapp.png" alt="Logo Python Django">
+                <p>Aplicaciones básicas para integrar en tus proyectos que utilicen Django, se utilizaron las tecnologías Python y Django</p>
+                <div>
+                    <!-- <a href=""><i class="ri-window-line"></i></a> -->
+                    <a href="https://github.com/almubaDev/preSetApp"><i class="ri-github-fill"></i></a>
                 </div>
             </div>
-            <div class="project_card">
-                <img class="demo_app" src="../img/presetImg.jpg" alt="">
-                <div class="project_card_links">
-                    <h6>Django Preset App</h6>
-                    <div class="button_link">
-                        <a href="https://github.com/almubaDev/preSetApp" target="_blank"><img src="../img/guthubIcon2.svg"alt=""></a>
-                    </div>
+            <div class="card">
+                <h4>Protask</h4>
+                <img src="" alt="Captura referencial de la aplicación">
+                <p>description</p>
+                <div>
+                    <a href=""><i class="ri-window-line"></i></a>
+                    <a href=""><i class="ri-github-fill"></i></a>
                 </div>
             </div>
-            <!-- <div class="project_card">
-                <img class="demo_app" src="./assets/img/ScreenRecorderProject3.gif" alt="">
-                <div class="project_card_links">
-                    <a href=""><img src="./assets/img/guthubIcon2.svg" alt=""></a>
-                    <a href=""><img src="./assets/img/playIcon.svg" alt=""></a>
-                </div>
-            </div> -->
+            <!-- end cards -->
         </div>
-    </div>     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </section>
 </body>
 </html>

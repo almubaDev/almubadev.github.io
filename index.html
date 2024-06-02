@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <!-- https://boxicons.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>almubaDev</title>
 </head>
 <body>
-    <main class="main_index">
-        <div class="section presentation" >
-            <div class="logo_super">
-                <div class="logo-container" >
-                    <div class="circle"></div>
-                    <div class="logo-text">almubaDev</div>
-                </div>
-            </div> 
-            <div class="iam">
-                <div class="name">
-                    <p class="sintx res_word">def</p>
-                    <h1>hola_soy_Alan </h1> 
-                    <p class="sintx res_word">( ):</p>
-                </div>
-                <div class="description">
-                    <p class="sintx res_word">return</p> 
-                    <h3>'FullStack Web Developer' </h3>
-                </div>
-                <!-- <a href="#skills" class="down_section"> <img src="./assets/img/chevron_down.svg" alt=""> </a> -->
-                <nav class="nav_home">
-                    <ul>
-                        <!-- <li class="nav_button"><a href="./index.html">¡Hola!</a></li> -->
-                        <li class="nav_button"><a href="./assets/pages/sobreMi.html">Sobre mi</a></li>
-                        <li class="nav_button"><a href="./assets/pages/projects.html">Proyectos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="contact">
-                <img class="programming_image" src="./assets/img/WhatsApp Image 2023-12-02 at 18.41.10.jpeg "alt="">
-                <div class="my_link">
-                    <a href="https://github.com/almubaDev" target="_blank" ><img class="github_link" src="./assets/img/githubIcon.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/almubadev/" target="_blank"><img src="./assets/img/linkdinIcon.svg" alt=""></a>
-                </div>
-            </div>
+    <header>
+        <a href="#" class="logo">almubaDev</a>
+
+        <label for="menu-toggle" class="menu-toggle-acction">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </label>
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+      
+        <ul class="nav_list">
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="rrss-mobile"><a href="https://www.linkedin.com/in/almubadev" target="_blank"><i class="ri-linkedin-line"></i></a></li>
+            <li class="rrss-mobile"><a href="https://github.com/almubaDev" target="_blank"><i class="ri-github-line"></i></a></li>
+            <li class="rrss-mobile"><a href="#" target="_blank">CV</a></li>
+        </ul>
+    </header>    
+    <section class="hero">
+        <div class="hero-text">
+            <h5>Fullstack Developer</h5>
+            <h1>Alan Muñoz Badillo</h1>
+            <p>Llevo las ideas en tu mente a la web <i class="ri-brain-fill"></i><i class="ri-arrow-right-line"></i><i class="ri-earth-line"></i></p>
+            <a href="./assets/pages/projects.html">Proyectos</a>
         </div>
-    </main>
+        <div class="hero-img">
+            <img src="./assets/img/WhatsApp Image 2023-12-02 at 18.41.10.jpeg" alt="almubadev photo">
+        </div>
+    </section>
+    <div class="rrss">
+        <a href="https://www.linkedin.com/in/almubadev" target="_blank"><i class="ri-linkedin-line"></i></a>
+        <a href="https://github.com/almubaDev" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="#" target="_blank">CV</a>
+    </div>
 </body>
 </html>
-<!-- <div class="logo_super">
-    <div class="logo-container">
-        <div class="circle"></div>
-        <div class="logo-text">almubaDev</div>
-    </div>
-</div> -->
