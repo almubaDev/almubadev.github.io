@@ -12,6 +12,10 @@ body {
     background-color: black;
 }
 
+i {
+    color: orange;
+}
+
 /* Index page */
 
 header {
@@ -62,7 +66,15 @@ header {
 
     .rrss-mobile {
         display: none;
+        a {
+            color: orange;
+        }
+
     }
+}
+
+.contact-link {
+    display: none;
 }
 
 .hero {
@@ -105,25 +117,7 @@ section {
         width: 80%;
     }
 
-    a {
-        background-color: #10597b ;
-        border: 1px solid transparent;
-        border-radius: 30px;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.4;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 5px 30px;
-        transition: all .5s ease;
-        width: 100%;
-        &:hover {
-            background-color: transparent;
-            border: 1px solid white;
-            transform: translateX(8px);
-        }
-    }
+
 }
 
 .hero-img img{
@@ -141,6 +135,27 @@ section {
     }
 }
 
+.project-btn {
+    background-color: #10597b ;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    transition: all .5s ease;
+    width: 100%;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid orange;
+        color: orange;
+        transform: translateX(8px);
+    }
+}
+
 .rrss {
     align-items: center;
     display: flex;
@@ -154,6 +169,7 @@ section {
 
     a {  
         border-radius: 0 30px 30px 0;
+        color: orange;
         display: flex;
         justify-content: end;
         font-size: 24px;
@@ -166,12 +182,13 @@ section {
             background-color: #10597b;
             width:100% ;
         }
+
     }
 
 }
 
 /* Proyect page */
-.proyect-container {
+.section-container {
     background: linear-gradient(-245.59deg, #31494e 0%, #385e70 25%, #131313 75% );
     min-height: 100vh;
     text-align: center;
@@ -201,23 +218,26 @@ section {
     height: 350px;
     margin: 24px;
     padding: 12px;
-    width: 200px;
-    z-index: 5;
+    width: 300px;
+    /* z-index: 5; */
 
     h4 {
         height: 10%;
     }
 
     img {
-        border: solid orange 2px;
-        border-radius: 50%;
+       
+        border: 1px solid orange;
         height: 30%;
+        margin: 0 auto;
         width: 100px;
     }
 
     p {
+        line-height: 2;
         font-size: 14px;
         height: 40%;
+        letter-spacing: 1.5px;
         text-align:justify;
         padding: 14px 6px 6px 5px;
     }
@@ -228,13 +248,93 @@ section {
         justify-content: space-around;
         height: 20%;
         padding: 8px 0;
-
-        i {
-            color: orange;
-        }
-
+        
     }
 }
+
+/* aboutMe  page*/
+.container-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: 90vh;
+    place-items: center;
+    margin: 3% auto 0;
+    width: 80%;
+
+    p {
+        letter-spacing: 1.5px;
+        line-height: 2;
+        text-align: justify;
+    }
+
+    div {
+        font-size: 50px;
+    }
+
+    form {
+        align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        /* padding: 40px; */
+        width: 100%;
+
+        h4 {
+            text-align: center;
+            width: 100%;
+        }
+
+        input, textarea, button {
+            border: none;
+            margin: 0 auto;
+            width: 50%;
+        }
+        
+        input, textarea {
+            color: #10597b;
+            padding-left: 12px;
+            outline: none;
+        }
+
+        input, button {
+            height: 24px;
+        }
+
+        textarea {
+            height: 30%;
+            padding-top: 12px;
+        }
+
+        input::placeholder, textarea::placeholder {
+            padding-left: 12px;
+            font-weight: bold;
+        }
+
+        textarea::placeholder {
+            padding-top: 12px;
+        }
+
+        button {
+            background-color: transparent;
+            border: orange solid 1px;
+            color: orange;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        button:hover {
+            background-color: #10597b;
+            border: none;
+            color: white;
+            transform: translateX(8px);
+        }
+    }
+}
+
+
 @media screen and (max-width:992px){
     /* Index page */
     .nav_list {
@@ -243,6 +343,15 @@ section {
         }
         
     }
+
+    .contact-link {
+        display: inline;
+    }
+
+    .aboutme-link {
+        display: none;
+    }
+    
     
     section {
         padding: 0 3%;
@@ -259,16 +368,52 @@ section {
             width: 80%;
         }
     }
+
     .rrss {
         display: none;
     }
+
+    /* project page */
+    .project-cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .card {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        width: 80%;
+
+        img {
+            display: none;
+        }
+
+        p {
+            display: none;
+        }
+
+        div{
+            width: 30%;
+        };
+    }
+
+    /* aboutMe  page*/
+    .container-info {
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+
+        p {
+            display: none;
+        }
+    }
+
 }
 
 
 @media screen and (max-width:768px) {
     /* Index page */
-
-
     .nav_list {
         align-items: center;
         background-color: #052c3ee4;
@@ -281,7 +426,7 @@ section {
         position: absolute;
         transition: all .5s ease-out;
         width: 200px;  
-        
+
         a {
             display: block;
             font-size: 16px;
@@ -290,8 +435,17 @@ section {
         .rrss-mobile {
             display: block;
         }
+        .contact-link {
+            display: inline;
+        }
+    
+        .aboutme-link {
+            display: none;
+        }
+    
     }
 
+   
     .menu-toggle-acction, #menu-icon{
         display: block;
     }
@@ -320,6 +474,15 @@ section {
         gap: 1rem;
         grid-template-columns: 1fr;
         height: 109%;;
+    }
+
+    /* aboutMe  page*/
+    .container-info {
+        margin-top: 20%;
+        p {
+            display: none;
+        }
+      
     }
 
 }
